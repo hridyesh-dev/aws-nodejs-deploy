@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: self-hosted #WILL RUN ON OUR OWN SELF HOSTED RUNNER 
 
     strategy:
       matrix:
