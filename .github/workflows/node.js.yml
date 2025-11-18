@@ -26,4 +26,5 @@ jobs:
         cache: 'npm'
         #saari files ko install kare ga 
     - run: npm ci
+    - run: pm2 restart Backend 
     
