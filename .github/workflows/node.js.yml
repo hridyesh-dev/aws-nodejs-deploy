@@ -26,5 +26,10 @@ jobs:
         cache: 'npm'
         #saari files ko install kare ga 
     - run: npm ci
+    - run: |
+            touch .env
+            echo "${{ secrets.PROD}}" > .env
+    # saara data .env mai daal do
+    
     - run: pm2 restart Backend 
     
